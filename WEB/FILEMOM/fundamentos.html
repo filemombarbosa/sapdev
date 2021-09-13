@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos HTML</title>
+</head>
+
+<!-- 
+    A Tag <style> dentro da Tag <head> permite definir estilos CSS (Design visual) para os elementos da página HTML, contudo não é uma boa prática!
+    é recomendado definir as classes CSS em um arquivo separado, para melhorar a manutenção e orgnização do código 
+-->
+
+<!-- Tag <style >>>>> -->
+<style>
+    .classTextoLaranja {
+        color: orange;
+    }
+
+    .classTextoAzul {
+        color: blue;
+    }
+
+    .classTextoNegrito {
+        font-weight: bold;
+    }
+
+    #idTextoItalico {
+        font-style: italic;
+    }
+</style><!-- <<<<< -->
+
+<body>
+
+<!-- Tag <p> para parágrafos com uso do atributo "class" para estilo CSS (Design) >>>>> -->    
+<p class="classTextoVermelho classTextoNegrito">Parágrafo 1 ...</p>
+<p class="classTextoAzul">Parágrafo 1 ...</p> <!-- <<<<<-->
+
+<!-- Tag <p> para parágrafos com uso do atributo "id" para estilo CSS (Design) >>>>> -->    
+<p id="idTextoItalico">Parágrafo 1 ...</p> <!-- <<<<<-->
+
+<!-- Tag <hxxx> para titulos de textos >>>> -->
+<h1>Titulo 1</h1>
+<p>Texto...</p>
+
+<h2>Titulo 2</h2>
+<p>Texto...</p>
+
+<h3>Titulo 3</h3>
+<p>Texto...</p> <!-- <<<<<-->
+
+<!-- Tag <a> para links para outra pagina ou para sessões da mesma página -->
+<a href="http://google.com">Link externo, não atrindo uma nova aba</a>
+<br>
+<a href="http://google.com" target="_blank">Link externo, atrindo uma nova aba</a> <!-- <<<<<-->
+
+<!-- Tags variadas -->
+<!-- <br> pular linha (Break line) -->
+<p>Texto...</p>
+<br>
+<p>Texto...</p>
+<!-- <hr> traço horizintal -->
+<p>Texto...</p>
+<hr>
+<p>Texto...</p> <!-- <<<<<-->
+
+<!-- Tag <img> para inserir imagem na página. o atributo src pode receber o endereço de uma imagem externa, ou o caminho da imagem no servido onde a pagina HTML está hospedada -->
+<img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg" alt="Imagem externa">
+<img src="/imagens/imnhaimagem.jpg" alt="Imagem interna no servidor web"><!-- <<<<<-->
+
+    
+</body>
+</html>
