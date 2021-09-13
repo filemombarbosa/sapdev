@@ -29,16 +29,20 @@
     #idTextoItalico {
         font-style: italic;
     }
+
+    .classRemovePontos {
+        list-style-type: none;
+    }
 </style><!-- <<<<< -->
 
 <body>
 
 <!-- Tag <p> para parágrafos com uso do atributo "class" para estilo CSS (Design) >>>>> -->    
-<p class="classTextoVermelho classTextoNegrito">Parágrafo 1 ...</p>
-<p class="classTextoAzul">Parágrafo 1 ...</p> <!-- <<<<<-->
+<p class="classTextoLaranja classTextoNegrito">Parágrafo 1 ...</p>
+<p class="classTextoAzul classTextoNegrito">Parágrafo 2 ...</p> <!-- <<<<<-->
 
 <!-- Tag <p> para parágrafos com uso do atributo "id" para estilo CSS (Design) >>>>> -->    
-<p id="idTextoItalico">Parágrafo 1 ...</p> <!-- <<<<<-->
+<p id="idTextoItalico">Parágrafo 3 ...</p> <!-- <<<<<-->
 
 <!-- Tag <hxxx> para titulos de textos >>>> -->
 <h1>Titulo 1</h1>
@@ -59,21 +63,19 @@
 <!-- <br> pular linha (Break line) -->
 <p>Texto...</p>
 <br>
-<p>Texto...</p>
 <!-- <hr> traço horizintal -->
 <p>Texto...</p>
 <hr>
-<p>Texto...</p> <!-- <<<<<-->
 
 <!-- Tag <img> para inserir imagem na página. o atributo src pode receber o endereço de uma imagem externa, 
     ou o caminho da imagem no servido onde a pagina HTML está hospedada.
-    com o atributo "width" podemos definir a largura e com o "heigh" a altura -->
+    com o atributo "width" podemos definir a largura e com o "height" a altura -->
 <img src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg" width="200px" height="150px" alt="Imagem externa">
 <br>
-<img src="/imagens/imnhaimagem.jpg" alt="Imagem interna no servidor web, neste caso, não foi encontrada"><!-- <<<<<-->
+<img width="200px" src="./imagens/nivel3/Fiat-Pulse_1.jpg" alt="Imagem interna no servidor web, neste caso, não foi encontrada"><!-- <<<<<-->
 
 <!-- tag <ul> lista 1 -->
-<ul>
+<ul class="classRemovePontos">
     <li>Item 1</li>
     <li>Item 2</li>
     <li>Item 3</li>
@@ -93,23 +95,25 @@
 </dl> <!-- <<<<<-->
     
 <!-- Tag <table>, <tr> linha, (td) coluna-->
-<table>
+<table border="1">
     <tr>
-        <th>Linha 1, Coluna 1</th>
-        <th>Linha 1, Coluna 2</th>
-        <th>Linha 1, Coluna 3</th>
+        <th>Titulo 1</th>
+        <th>Titulo 2</th>
+        <th>Titulo 3</th>
     </tr>
     <tr>
-        <th>Linha 2, Coluna 1</th>
-        <th>Linha 2, Coluna 2</th>
-        <th>Linha 2, Coluna 3</th>
+        <td>1</td>
+        <td>11</td>
+        <td>111</td>
     </tr>
     <tr>
-        <th>Linha 3, Coluna 1</th>
-        <th>Linha 3, Coluna 2</th>
-        <th>Linha 3, Coluna 3</th>
+        <td>2</td>
+        <td>22</td>
+        <td>222</td>
     </tr>
 </table> <!-- <<<<<-->
+
+
 
 </body>
 </html>
