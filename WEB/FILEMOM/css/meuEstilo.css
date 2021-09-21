@@ -1,0 +1,19 @@
+.classTextoLaranja {
+    color: orange;
+}
+
+.classTextoAzul {
+    color: blue;
+}
+
+.classTextoNegrito {
+    font-weight: bold;
+}
+
+#idTextoItalico {
+    font-style: italic;
+}
+
+.classRemovePontos {
+    list-style-type: none;
+}

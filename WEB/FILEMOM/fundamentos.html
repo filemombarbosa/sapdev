@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/meuEstilo.css" />
+    
     <title>Fundamentos HTML</title>
 </head>
+
 
 <!-- 
     A Tag <style> dentro da Tag <head> permite definir estilos CSS (Design visual) para os elementos da página HTML, contudo não é uma boa prática!
@@ -15,28 +19,20 @@
 
 <!-- Tag <style >>>>> -->
 <style>
-    .classTextoLaranja {
-        color: orange;
-    }
-
-    .classTextoAzul {
-        color: blue;
-    }
-
-    .classTextoNegrito {
-        font-weight: bold;
-    }
-
-    #idTextoItalico {
-        font-style: italic;
-    }
-
-    .classRemovePontos {
-        list-style-type: none;
-    }
+    
 </style><!-- <<<<< -->
 
 <body>
+
+    <div style="background-color: red; width: 200px; float: left; text-align: center;">
+        <p>MEU CONTEUDO 1</p>
+    </div>
+
+    <div style="background-color: green; width: 200px; float: right; text-align: center;">
+        <p>MEU CONTEUDO 2</p>
+    </div>
+
+    <br><br><br>
 
     <!-- Tag <p> para parágrafos com uso do atributo "class" para estilo CSS (Design) >>>>> -->
     <p class="classTextoLaranja classTextoNegrito">Parágrafo 1 ...</p>
